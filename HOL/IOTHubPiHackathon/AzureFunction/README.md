@@ -8,15 +8,17 @@ Before you start to build out the Azure function, you'll need some configuration
 1. Get the values associated with the Event Hub compatible endpoints as well as the IoT Hub Connection String:
   - Open the Azure Portal [here](https://ms.portal.azure.com)
   - Click on the IoT Hub that was created earlier. 
-  - Under the “Messaging” category click on “Endpoints”.
-  - In the list of "Built-in endpoints", click on “Events” to load the Events endpoint properties blade. 
-  - Take note of the values for the “Event Hub-compatible name” and “Event Hub-compatible endpoint" fields. Feel free to use the parameters XLS to note these new values. <br />  
+  - Under the "Settings" category click on “Built-in Endpoints”.
+  - In the list of "Built-in endpoints", expand section called “Events”. 
+  - Take note of the values for the “Event Hub-compatible name” and “Event Hub-compatible endpoint" fields. 
+  - 
+  - Feel free to use the [IoTHOL-LabParameters.xlsx](/HOL/IOTHubPiHackathon/IoTHOL-LabParameters.xlsx) to note these new values. <br />  
   ![Event Hub Endpoint](/HOL/IOTHubPiHackathon/images/EHendpointValues.jpg) <br />
   
 ### Create a Function
 
 In the next part of this lab, you will be creating a C# Azure Function that will get triggered whenever the IoT hub service receives a new event. 
-For ease of getting through the lab, we have provided the code that you will need to write the function. When triggered, the code in the function will compare the input to the set threshold (the tag parameter setting that you previously set to a value of 40). If the value is above or below, the function will send a cloud to device (C2D) message to the RaspberryPi. Note: To be technically correct, the function actually gets triggered when the event hub compatible endpoint within the IoT Hub service receives an event. IoT Hub service is built with the event hub service running under the covers.
+For ease of getting through the lab, we have provided the code that you will need to write the function. When triggered, the code in the function will compare the input to the set threshold (the tag parameter setting that you previously set to a value of 40). If the value is above or below, the function will send a cloud to device (C2D) message to the Device (RaspberryPi or IoTDevKit). Note: To be technically correct, the function actually gets triggered when the event hub compatible endpoint within the IoT Hub service receives an event. IoT Hub service is built with the event hub service running under the covers.
 1. Navigate to the Azure portal: https://portal.azure.com 
 2. Click the ‘+’ sign and type in “function app” 
     <p align="center">

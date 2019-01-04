@@ -8,15 +8,17 @@ Before you start to build out the Azure function, you'll need some configuration
 1. Get the values associated with the Event Hub compatible endpoints as well as the IoT Hub Connection String:
   - Open the Azure Portal [here](https://ms.portal.azure.com)
   - Click on the IoT Hub that was created earlier. 
-  - Under the “Messaging” category click on “Endpoints”.
-  - In the list of "Built-in endpoints", click on “Events” to load the Events endpoint properties blade. 
-  - Take note of the values for the “Event Hub-compatible name” and “Event Hub-compatible endpoint" fields. Feel free to use the parameters XLS to note these new values. <br />  
+  - Under the "Settings" category click on “Built-in Endpoints”.
+  - In the list of "Built-in endpoints", expand section called “Events”. 
+  - Take note of the values for the “Event Hub-compatible name” and “Event Hub-compatible endpoint" fields. 
+  - 
+  - Feel free to use the [IoTHOL-LabParameters.xlsx](/HOL/IOTHubPiHackathon/IoTHOL-LabParameters.xlsx) to note these new values. <br />  
   ![Event Hub Endpoint](/HOL/IOTHubPiHackathon/images/EHendpointValues.jpg) <br />
   
 ### Create a Function
 
 In the next part of this lab, you will be creating a C# Azure Function that will get triggered whenever the IoT hub service receives a new event. 
-For ease of getting through the lab, we have provided the code that you will need to write the function. When triggered, the code in the function will compare the input to the set threshold (the tag parameter setting that you previously set to a value of 40). If the value is above or below, the function will send a cloud to device (C2D) message to the RaspberryPi. Note: To be technically correct, the function actually gets triggered when the event hub compatible endpoint within the IoT Hub service receives an event. IoT Hub service is built with the event hub service running under the covers.
+For ease of getting through the lab, we have provided the code that you will need to write the function. When triggered, the code in the function will compare the input to the set threshold (the tag parameter setting that you previously set to a value of 40). If the value is above or below, the function will send a cloud to device (C2D) message to the Device (RaspberryPi or IoTDevKit). Note: To be technically correct, the function actually gets triggered when the event hub compatible endpoint within the IoT Hub service receives an event. IoT Hub service is built with the event hub service running under the covers.
 1. Navigate to the Azure portal: https://portal.azure.com 
 2. Click the ‘+’ sign and type in “function app” 
     <p align="center">
@@ -85,7 +87,7 @@ For ease of getting through the lab, we have provided the code that you will nee
 ![Add project file](/HOL/IOTHubPiHackathon/images/addProject.jpg)
 
   - Copy the text from [project.json](/HOL/IOTHubPiHackathon/AzureFunction/project.json) file in the github repo to the new json file you created.
-  - Click "Save". 
+  - Click "Save and Run" to restore packages. 
     <p align="center">
     <img src="/HOL/IOTHubPiHackathon/images/projectSave.jpg" width="50%" height="50%" />
     </p>    
@@ -103,6 +105,7 @@ For ease of getting through the lab, we have provided the code that you will nee
 You will now attempt to trigger the function and have the function send a message back to the Sense HAT. 
 If you recall in lab 2, you created a tag parameter called tags.HighTemperatureLimit and set it to 40. This is the threshold that will determine when the status of the Sense HAT will change to Hot (if temperature is above the limit) or to Normal (when the temperature drops below the limit). When the status changes, the state (hot or normal) will appear on the Sense HAT display LEDs. 
 
+# Raspberry PI / Sense Hat Setup
 1. If your python script is no longer running on the Raspberry Pi, start it back up using the command ```python SenseHat_IoTHub_Http_Lab_Key.py```
 2. Try to get the temperature of the Sense HAT above the threshold value (if set to the instructed value, you should be trying to get the temperature above 40C)
 
@@ -110,6 +113,8 @@ If you are having difficulties getting the temperature on your physical Sense HA
 - Lower the threshold in the device twin for the RaspberryPi device. You can do this in the solution accelerator portal (see steps in lab 2 to determine how to change the HighTemperatureLimit) 
 - Update your Python script to use the Sense Hat emulator instead of the physical board. Using the Sense HAT emulator will allow you to virtually control the temperature (and other properties)
 <BR>
+
+# Lab Cleanup and Rollback
 
 **IMPORTANT** - the next lab walks you through the steps to either delete or scale down the resources that you created for this workshop. If you do not walk through these steps, the services will continue to run in your subscription and therefore cost you money. <BR>
 [Next lab - 6 Lab Cleanup](/HOL/IOTHubPiHackathon/Cleanup)

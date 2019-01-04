@@ -83,7 +83,9 @@ The following subsections of the Hands on Labs are as follows:
 
 ### Morning
 
- * [1 - Hands on Lab Setup](/HOL/IOTHubPiHackathon/1)
+ * [1A - Hands on Lab Setup - Raspberry PI](/HOL/IOTHubPiHackathon/1A) <BR>
+    **OR**<br>
+ * [1B - Hands on Lab Setup - MXChip IoT DevKit](/HOL/IOTHubPiHackathon/1B)
 
  * 2 - Provision **ONE** of the following:<br>
    * a) [A Remote Monitoring Solution Accelerator](/HOL/IOTHubPiHackathon/2) <BR>

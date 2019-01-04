@@ -13,7 +13,4 @@ Follow steps below to download the latest version of default firmware for IoT De
 * Wait until the file is copied, then the IoT DevKit will reboot to the latest firmware.
   * After done, you will see the firmware version on the screen of the kit if it has connected with Internet.
 
-
-
-
-[Back to Main HOL Instructions](/HOL/IOTHubPiHackathon/README.md)
+[Back to MXChip IoT DevKit Setup](/HOL/IOTHubPiHackathon/1B/README.md)

@@ -44,7 +44,7 @@ Your DevKit enters AP mode for configuring Wi-Fi. The screen displays the servic
 <p align="center">
   <img src="/HOL/IOTHubPiHackathon/images/MXChipIotDevKit_wifi-ap.jpg" />
 </p>
-<p align="center">
+<p align="left">
   <img src="/HOL/IOTHubPiHackathon/images/MXChipIotDevKit_set-ap-mode.gif" />
 </p>
 
@@ -52,7 +52,7 @@ Your DevKit enters AP mode for configuring Wi-Fi. The screen displays the servic
 Now, use another Wi-Fi enabled device (computer or mobile phone) to connect to the DevKit SSID (highlighted in the previous image). Leave the password empty.
 
 <p align="center">
-  <img src="/HOL/IOTHubPiHackathon/images/MXChipIotDevKit_connect-ssid.jpg" />
+  <img src="/HOL/IOTHubPiHackathon/images/MXChipIotDevKit_connect-ssid.png" />
 </p>
 
 #### Configure Wi-Fi for the DevKit
@@ -61,7 +61,7 @@ Now, use another Wi-Fi enabled device (computer or mobile phone) to connect to t
   * Note: The Wi-Fi network and password will be provided in the classroom
 
 <p align="center">
-  <img src="/HOL/IOTHubPiHackathon/images/MXChipIotDevKit_wifi-portal.jpg" />
+  <img src="/HOL/IOTHubPiHackathon/images/MXChipIotDevKit_wifi-portal.png" />
 </p>
 When the connection succeeds, the DevKit reboots in a few seconds. You then see the Wi-Fi name and IP address on the screen:
 <p align="center">

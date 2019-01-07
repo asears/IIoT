@@ -37,7 +37,7 @@ IoT projects rely on internet connectivity. Use the following instructions to co
 
 * Hold down button B
 * Push and release the reset button (while still holding button B)
-* Wait a second or two, then release button B
+* Wait a second or two (until the screen displays "IoT DevKit") then release button B
 
 Your DevKit enters AP mode for configuring Wi-Fi. The screen displays the service set identifier (SSID) of the DevKit and the configuration portal IP address.
 
@@ -64,11 +64,47 @@ Now, use another Wi-Fi enabled device (computer or mobile phone) to connect to t
   <img src="/HOL/IOTHubPiHackathon/images/MXChipIotDevKit_wifi-portal.png" />
 </p>
 When the connection succeeds, the DevKit reboots in a few seconds. You then see the Wi-Fi name and IP address on the screen:
+
+<!---
+Changed picture to point to MXChipIotDevKit_firmware instead of MXChipIotDevKit_wifi-ip since it was closer to what I was seeing on my MXChip
+-->
+
 <p align="center">
-  <img src="/HOL/IOTHubPiHackathon/images/MXChipIotDevKit_wifi-ip.jpg" />
+  <img src="/HOL/IOTHubPiHackathon/images/MXChipIotDevKit_firmware.jpg" /> 
 </p>
+
+* After Wi-Fi is configured, your credentials will persist on the device for that connection, even if the device is unplugged. 
+* For example, if you configure the DevKit for Wi-Fi in your home and then take the DevKit to the office, you will need to reconfigure AP mode (starting at the step in the "Enter AP Mode" section) to connect the DevKit to your office Wi-Fi. 
+
+### Start using the DevKit
+
+The default app running on the DevKit checks the latest version of the firmware and displays some sensor diagnosis data for you.
+
+### Upgrade to the latest firmware
+
+* Note: Since v1.1, DevKit enables ST-SAFE in bootloader. You need to upgrade the firmware if you are running a version prior to v1.1.
+* If you need a firmware upgrade, the screen will show the current and latest firmware versions.
+* To upgrade, follow the instructions here: [MXChip IoT DevKit - Upgrade / ReInstall Firmware](/HOL/IOTHubPiHackathon/1B/firmware)
+
+<p align="center">
+  <img src="/HOL/IOTHubPiHackathon/images/MXChipIotDevKit_firmware.jpg" />
+</p>
+
+* Note: This is a one-time effort. After you start developing on the DevKit and upload your app, the latest firmware will come with your app.
+
+### Test various sensors
+
+Press button B to test the sensors. Continue pressing and releasing the button B to cycle through each sensor.
+
+<p align="center">
+  <img src="/HOL/IOTHubPiHackathon/images/MXChipIotDevKit_sensors.jpg" />
+</p>
+
+Briefly explain other buttons?
+
+* E.g. A button does?
+* Reset will 'reboot' your device (but will retain WiFi settings or running programs)
+
 ------------------------------
-
-
 
 [Back to Main HOL Instructions](/HOL/IOTHubPiHackathon/README.md)

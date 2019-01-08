@@ -107,3 +107,7 @@ The following subsections of the Hands on Labs are as follows:
  * [5 - Azure Functions](/HOL/IOTHubPiHackathon/AzureFunction)
  
  * [6 - Lab Clean-up](/HOL/IOTHubPiHackathon/Cleanup)
+
+## Resources
+
+[IoT Fundamentals](https://docs.microsoft.com/en-us/azure/iot-fundamentals/)

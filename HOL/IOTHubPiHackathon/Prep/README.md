@@ -10,6 +10,16 @@ Ensure that a trial, MSDN or Enterprise Azure subscription is available with acc
 
 An IoT DevKit will be provided to attendees for those who do not have an IoT DevKit or Raspberry Pi.  This device will be connected to your Azure IoT Hub in your Azure subscription.
 
+### Laptop Setup - IoT DevKit
+
+For Azure IoT DevKit, the following software is recommended:
+- [Visual Studio Code](https://code.visualstudio.com/)
+- [Arduino v1.86](https://www.arduino.cc/en/Main/OldSoftwareReleases#previous) Use version 1.86 as 1.87 is currently not compatible
+- [Azure IoT Hub Toolkit](https://marketplace.visualstudio.com/items?itemName=vsciot-vscode.azure-iot-toolkit)
+- [Azure IoT Edge](https://marketplace.visualstudio.com/items?itemName=vsciot-vscode.azure-iot-edge)
+- [Python Extension](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
+- [PuTTY](http://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) or another SSH client. You may use PuTTY to connect to Azure IoT DevKit to configure wifi and IoT connection
+
 ### Raspberry Pi Setup (Optional)
 
 If providing your own Raspberry Pi, you will need to walk through the following steps on your Raspberry Pi prior to the hands-on-lab. <BR>
@@ -51,15 +61,6 @@ If providing your own Raspberry Pi, you will need to walk through the following 
   - In the menu, choose "Preferences", then "Raspberry Pi Configuration"
   - Enable SSH
 
-### Laptop Setup - IoT DevKit
-
-For Azure IoT DevKit, the following software is recommended:
-- [Visual Studio Code](https://code.visualstudio.com/)
-- [Arduino v1.86](https://www.arduino.cc/en/Main/OldSoftwareReleases#previous) Use version 1.86 as 1.87 is currently not compatible
-- [Azure IoT Hub Toolkit](https://marketplace.visualstudio.com/items?itemName=vsciot-vscode.azure-iot-toolkit)
-- [Azure IoT Edge](https://marketplace.visualstudio.com/items?itemName=vsciot-vscode.azure-iot-edge)
-- [Python Extension](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
-- [PuTTY](http://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) or another SSH client. You may use PuTTY to connect to Azure IoT DevKit to configure wifi and IoT connection
 
 ### Laptop Setup - Raspberry Pi
 

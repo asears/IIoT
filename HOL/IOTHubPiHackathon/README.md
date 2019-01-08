@@ -58,7 +58,7 @@ Attendees may be provided with Azure IoT DevKit or can use their own hardware or
 For Azure IoT DevKit, the following software is recommended:
 - [Visual Studio Code](https://code.visualstudio.com/)
 - [Arduino](https://www.arduino.cc/en/Main/OldSoftwareReleases#previous) Use version 1.86 as 1.87 is currently not compatible
-- [Azure IoT Hub Toolkit](https://marketplace.visualstudio.com/items?itemName=vsciot-vscode.azure-iot-toolkit)
+- [Azure IoT Tools](https://marketplace.visualstudio.com/items?itemName=vsciot-vscode.azure-iot-tools)
 - [Azure IoT Edge](https://marketplace.visualstudio.com/items?itemName=vsciot-vscode.azure-iot-edge)
 - [Python Extension](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
 - [PuTTY](http://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) or another SSH client. You may use PuTTY to connect to Azure IoT DevKit to configure wifi and IoT connection

@@ -34,7 +34,7 @@ It is expected that you will have a base understanding of the following:
 
 ### HARDWARE 
 
-You can order your hardware from a variety of online sites such as adafruit.com, amazon.com etc. Please order yours 3-4 weeks in advance of the HOL so it will arrive in time.
+Attendees may be provided with Azure IoT DevKit or can use their own hardware or simulator. You can order your hardware from a variety of online sites such as adafruit.com, amazon.com etc. Please order yours 3-4 weeks in advance of the HOL so it will arrive in time.
 
 #### Devices
 

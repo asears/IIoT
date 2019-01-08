@@ -1,4 +1,4 @@
-# IoT Hub Pi Hands on Lab (HoL)
+# IoT Hub Hands on Lab (HoL)
 
 ## Overview
 

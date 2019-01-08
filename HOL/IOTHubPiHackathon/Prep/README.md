@@ -2,9 +2,17 @@
 
 Please perform the following steps in advance of the Hands-on-labs otherwise you will spend a significant time during the workshop performing these steps.
 
-### Raspberry Pi Setup
+### Azure Setup
 
-You will need to walk through the following steps on your Raspberry Pi prior to the hands-on-lab. <BR>
+Ensure that a trial, MSDN or Enterprise Azure subscription is available with access to create resources.
+
+### IoT DevKit Setup
+
+An IoT DevKit will be provided to attendees for those who do not have an IoT DevKit or Raspberry Pi.
+
+### Raspberry Pi Setup (Optional)
+
+If providing your own Raspberry Pi, you will need to walk through the following steps on your Raspberry Pi prior to the hands-on-lab. <BR>
 
 1. Ensure your Raspberry Pi can boot [Raspian] (https://www.raspberrypi.org/downloads/) from the SD card. 
   - Follow the instructions to install the operating system: [NOOBS] (https://www.raspberrypi.org/downloads/noobs/) 
@@ -43,7 +51,11 @@ You will need to walk through the following steps on your Raspberry Pi prior to 
   - In the menu, choose "Preferences", then "Raspberry Pi Configuration"
   - Enable SSH
 
-### Laptop Setup (only required if using a laptop to emulate into the Raspberry Pi)
+### Laptop Setup - IoT DevKit
+
+1. Download and install [PuTTY](http://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html). We will use PuTTY to terminal into the IoT DevKit Device to connect to wifi and IoT Hub. 
+
+### Laptop Setup - Raspberry Pi
 
 The following steps will walk you through the installation of tools that you need to run on your laptop for this lab: 
 
